@@ -1,0 +1,10 @@
+<h1>Verduras</h1>
+
+{{#each . }}
+<div style="float: left; margin: 20px; border: 6px black; border-radius: 20px;">
+<h3><a href="/verduras/{{this.nombre}}"/>{{this.nombre}} </h3>
+<h4>{{this.precio}}</h4>
+<img style="width: 500px; height: auto;"src="{{this.img_url}}"/>
+<a href="/verduras/{{this.nombre}}"/>
+</div>
+{{/each}}
